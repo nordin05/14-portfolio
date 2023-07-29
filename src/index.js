@@ -1,1 +1,3 @@
-import "./nav_aboutme_style.css";
+import "./Styles/global.css";
+import "./Styles/layout.css";
+import "./Styles/projects.css";
