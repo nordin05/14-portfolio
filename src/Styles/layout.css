@@ -24,15 +24,21 @@ nav li {
     min-height: 550px;
 }
 
+.contact {
+    background-color: rosybrown;
+}
+
 .about-me,
-.projects {
+.projects,
+.contact {
     padding: 0px 150px;
     padding-top: 35px;
     padding-bottom: 15px;
 }
 
 .about-me h1,
-.projects h1 {
+.projects h1,
+.contact h1 {
     border-bottom: 2px solid red;
 }
 
@@ -58,9 +64,27 @@ nav li {
     margin-right: 50px;
 }
 
+.contact .contact-container {
+    background-color: lightgreen;
+    max-width: 400px;
+
+    margin-top: 20px;
+    padding: 20px 15px;
+}
+
+.contact .contact-container p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-container i {
+    font-size: 50px;
+}
+
 @media only screen and (max-width: 768px) {
     .about-me,
-    .projects {
+    .projects,
+    .contact {
         padding: 0px 75px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -80,7 +104,8 @@ nav li {
     }
 
     .about-me,
-    .projects {
+    .projects,
+    .contact {
         text-align: center;
         padding: 0px 20px;
         padding-top: 10px;
