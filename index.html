@@ -7,17 +7,17 @@
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-        <title>Document</title>
+        <title>Portfolio</title>
     </head>
     <body>
         <header>
             <nav>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </nav>
         </header>
-        <section class="about-me">
+        <section id="about" class="about-me">
             <h1>About Me</h1>
             <div class="container">
                 <h2>
@@ -47,8 +47,8 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
-            <h1>Projects</h1>
+        <section id="projects" class="projects">
+            <h1 id="projects">Projects</h1>
             <div class="projects-container">
                 <div class="project">
                     <div class="image">
@@ -63,8 +63,14 @@
                             section of The Odin Project, the goal was to get
                             familiar with using Jest for unit testing.
                         </p>
-                        <button>Source Code</button>
-                        <button>Live Preview</button>
+                        <button
+                            onclick=" window.open('https://github.com/nordin05/13-testing','_blank')">
+                            Source Code
+                        </button>
+                        <button
+                            onclick=" window.open('https://nordin05.github.io/13-testing/','_blank')">
+                            Live Preview
+                        </button>
                     </div>
                 </div>
                 <div class="project">
@@ -81,8 +87,14 @@
                             can take given a start and end position, uses
                             Breadth-first search to find a solution.
                         </p>
-                        <button>Source Code</button>
-                        <button>Live Preview</button>
+                        <button
+                            onclick=" window.open('https://github.com/nordin05/12-CS','_blank')">
+                            Source Code
+                        </button>
+                        <button
+                            onclick=" window.open('https://nordin05.github.io/12-CS/','_blank')">
+                            Live Preview
+                        </button>
                     </div>
                 </div>
                 <div class="project">
@@ -98,8 +110,14 @@
                             liked doing the animations. The goal was to get
                             familiar with Factory Functions.
                         </p>
-                        <button>Source Code</button>
-                        <button>Live Preview</button>
+                        <button
+                            onclick=" window.open('https://github.com/nordin05/8-tic-tac-toe','_blank')">
+                            Source Code
+                        </button>
+                        <button
+                            onclick=" window.open('https://nordin05.github.io/8-tic-tac-toe/','_blank')">
+                            Live Preview
+                        </button>
                     </div>
                 </div>
                 <div class="project">
@@ -116,22 +134,35 @@
                             messy. But again I liked how the animations turned
                             out.
                         </p>
-                        <button>Source Code</button>
-                        <button>Live Preview</button>
+                        <button
+                            onclick=" window.open('https://github.com/nordin05/3-RockPaperScissors','_blank')">
+                            Source Code
+                        </button>
+                        <button
+                            onclick=" window.open('https://nordin05.github.io/3-RockPaperScissors/','_blank')">
+                            Live Preview
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <h1>Contact</h1>
             <div class="contact-container">
-                <h2>You can contact me through my E-mail or Github!</h2>
+                <h2>You can contact me through my E-mail!</h2>
                 <div class="icons">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
-                    </svg>
-                    <i class="devicon-github-original-wordmark colored"></i>
+                    <a
+                        href="mailto:&#110;&#111;&#114;&#100;&#105;&#110;&#046;&#101;&#108;&#046;&#097;&#122;&#122;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                    </a>
+                    <i
+                        onclick=" window.open('https://github.com/nordin05','_blank')"
+                        class="devicon-github-original-wordmark colored"></i>
                 </div>
             </div>
         </section>
