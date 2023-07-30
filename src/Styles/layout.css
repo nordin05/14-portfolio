@@ -12,10 +12,14 @@
     --bg-col: hsl(229.85deg 41.57% 93.52%);
 }
 
+body {
+    background-color: var(--bg-col);
+}
+
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav {
@@ -38,10 +42,13 @@ nav li {
 .about-me {
     background-color: var(--aboutme-bg-col);
     min-height: 330px;
+
+    box-shadow: 0px 10px 0px 0px hsl(255deg 78% 30% /1000%);
+    position: relative;
+    z-index: 1;
 }
 
 .projects {
-    background-color: var(--bg-col);
     min-height: 550px;
 }
 
