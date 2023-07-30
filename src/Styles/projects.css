@@ -4,15 +4,10 @@
     grid-gap: 15px;
 
     margin-top: 20px;
-}
-
-.projects-container .project {
-    background-color: brown;
+    margin-bottom: 50px;
 }
 
 .projects-container .project .image {
-    background-color: mediumslateblue;
-
     position: relative;
     overflow: hidden;
     min-height: 275px;
@@ -43,6 +38,8 @@
 }
 
 .projects-container .project .info {
+    background-color: var(--aboutme-container-bg-col);
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 100px 1fr;
@@ -52,21 +49,35 @@
 }
 
 .projects-container .project .info .title {
+    color: var(--aboutme-h2-col);
+
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
 
 .projects-container .project .info .descr {
+    color: var(--aboutme-p-col);
+    padding-left: 5px;
+
     grid-column: 1 / 3;
     grid-row: 2 / 3;
 }
 
 .projects-container .project .info button {
-    width: 100px;
-    height: 25px;
+    width: 130px;
+    height: 40px;
 
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+
+    color: var(--aboutme-p-col);
+    background-color: var(--aboutme-bg-col);
+    border: 2px solid var(--aboutme-h2-col);
+    border-radius: 6px;
 }
 
 .projects-container .project .info button:nth-of-type(1) {

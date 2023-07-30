@@ -1,5 +1,20 @@
+:root {
+    --aboutme-bg-col: hsl(254.77deg 72.85% 51.23%);
+    --aboutme-container-bg-col: hsl(254.92deg 58.12% 57.11%);
+    --aboutme-h1-border-col: hsl(255.48deg 63.73% 61.33%);
+    --aboutme-h1-col: hsl(254.92deg 87.21% 88.08%);
+    --aboutme-h2-col: hsl(254.92deg 60% 40.45%);
+    --aboutme-p-col: hsl(254.88deg 31.62% 79.49%);
+
+    --projects-h1-col: hsl(247.33deg 25.6% 59.98%);
+    --projects-h1-border-col: hsl(246.92deg 32.34% 74.61%);
+
+    --bg-col: hsl(229.85deg 41.57% 93.52%);
+}
+
 nav {
-    background-color: antiquewhite;
+    background-color: var(--bg-col);
+    color: var(--aboutme-bg-col);
 
     display: flex;
     justify-content: flex-end;
@@ -15,17 +30,13 @@ nav li {
 }
 
 .about-me {
-    background-color: aquamarine;
+    background-color: var(--aboutme-bg-col);
     min-height: 330px;
 }
 
 .projects {
-    background-color: blanchedalmond;
+    background-color: var(--bg-col);
     min-height: 550px;
-}
-
-.contact {
-    background-color: rosybrown;
 }
 
 .about-me,
@@ -42,43 +53,84 @@ nav li {
     border-bottom: 2px solid red;
 }
 
+.about-me h1 {
+    color: var(--aboutme-h1-col);
+    border-bottom: 2px solid var(--aboutme-h1-border-col);
+}
+
 .about-me .container {
-    background-color: blueviolet;
+    background-color: var(--aboutme-container-bg-col);
     max-width: 800px;
 
     padding: 20px 15px;
     margin-top: 20px;
 }
 
+.about-me .container h2 {
+    color: var(--aboutme-h2-col);
+}
+
 .about-me .container h2 .name {
-    color: red;
+    color: var(--aboutme-h1-col);
 }
 
 .about-me .container h2 .subject {
-    color: blue;
+    color: var(--aboutme-h1-col);
 }
 
 .about-me .container .paragraphs p {
     padding: 0px 10px;
     padding-top: 10px;
     margin-right: 50px;
+    color: var(--aboutme-p-col);
+}
+
+.projects h1 {
+    color: var(--projects-h1-col);
+    border-bottom: 2px solid var(--projects-h1-border-col);
+}
+
+.contact {
+    background-color: var(--aboutme-bg-col);
+}
+
+.contact h1 {
+    color: var(--aboutme-h1-col);
+    border-bottom: 2px solid var(--aboutme-h1-border-col);
 }
 
 .contact .contact-container {
-    background-color: lightgreen;
-    max-width: 400px;
+    background-color: var(--aboutme-container-bg-col);
+    max-width: 500px;
 
     margin-top: 20px;
     padding: 20px 15px;
 }
 
-.contact .contact-container p {
+.contact .contact-container h2 {
+    color: var(--aboutme-p-col);
     font-size: 20px;
     margin-bottom: 15px;
 }
 
+.contact .contact-container .icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .contact-container svg path {
+    fill: var(--aboutme-h2-col);
+}
+
+.contact .contact-container svg {
+    width: 50px;
+}
+
 .contact .contact-container i {
     font-size: 50px;
+    color: var(--aboutme-h2-col);
 }
 
 @media only screen and (max-width: 768px) {
